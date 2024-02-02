@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title><form action="" method="get"></form> sample</title>
+    <style>
+      .Sample_form {
+        font-size: 12px;
+        width: fit-content;
+        padding: 20px;
+        background: #dadada;
+        border-radius: 15px;
+        margin: 0 auto;
+      }
+      h2 {
+        grid-column: span 2;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 150px 300px;
+        grid-gap: 15px;
+      }
+      textarea {
+        width: 100%;
+      }
+      button {
+        grid-column: span 2;
+        justify-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="Sample_form">
+      <form action="https://example.com" method="post">
+        <h2>入力フォームサンプル</h2>
+        <label for="user-name">"text"</label>
+        <input id="user-name" type="text" name="user-name" placeholder="テキスト入力欄">
+        <label for="radio">"radio"</label>
+        <div>
+          <label class="a">
+            <input type="radio" name="example" value="男性">男性
+          </label>
+          <label class="b">
+          <input type="radio" name="example" value="女性">女性
+          </label>
+          <label class="c">
+          <input type="radio" name="example" value="その他">その他
+          </label>
+        </div>
+        <label>"checkbox"</label>
+        <div class="jobs">
+          <input id="select1" type="checkbox" name="job" value="select1">
+          <label for="select1">選択肢1</label>
+          <input id="select2" type="checkbox" name="job" value="select2">
+          <label for="select2">選択肢2</label>
+          <input id="select3" type="checkbox" name="job" value="select3">
+          <label for="select3">選択肢3</label>
+        </div>
+        <button type="submit">登録する(button)</button>
+      </form>
+    </section>
+  </body>
+</html>
