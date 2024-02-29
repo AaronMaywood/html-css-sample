@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -6,34 +5,45 @@
     <meta name="viewport" content="width=device-width">
     <title>grid sample</title>
     <style>
+      body{
+        margin: 0;
+      }
+      .container{
+        height: 100vh;
+      }
       /* それぞれのdiv（class）に命名 */
-      .header { grid-area: header; }
-      .nav { grid-area: nav; }
-      .contents { grid-area: contents; }
-      .aside { grid-area: aside; }
-      .footer { grid-area: footer; }
-
-      .container div.header {
+      .header {
         grid-area: header;
+      }
+      .nav {
+        grid-area: nav;
+      }
+      .contents {
+        grid-area: contents;
+      }
+    .aside {
+        grid-area: aside;
+      }
+    .footer {
+        grid-area: footer;
+      }
+
+      /*便宜上、背景色を指定しています*/
+      .header {
         background:#fcf;
       }
-      .container div.nav {
-        grid-area: nav;
+      .nav {
         background:#cff;
       }
-      .container div.contents {
-        grid-area: contents;
+      .contents {
         background:#ffc;
       }
-    .container div.aside {
-        grid-area: aside;
+    .aside {
         background:#cfc;
       }
-    .container div.footer {
-        grid-area: footer;
+    .footer {
         background:#ccf;
       }
-
       .container {  
         height: 1000px;
         display: grid;
@@ -60,4 +70,3 @@
     </div>
   </body>
 </html>
-
